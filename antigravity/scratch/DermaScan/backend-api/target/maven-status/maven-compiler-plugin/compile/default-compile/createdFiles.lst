@@ -1,0 +1,13 @@
+com\dermascan\api\model\Scan.class
+com\dermascan\api\payload\JwtResponse.class
+com\dermascan\api\repository\UserRepository.class
+com\dermascan\api\repository\ScanRepository.class
+com\dermascan\api\model\User.class
+com\dermascan\api\security\JwtUtils.class
+com\dermascan\api\security\UserDetailsServiceImpl.class
+com\dermascan\api\controller\ScanController.class
+com\dermascan\api\DermaScanApplication.class
+com\dermascan\api\config\SecurityConfig.class
+com\dermascan\api\security\AuthTokenFilter.class
+com\dermascan\api\security\UserDetailsImpl.class
+com\dermascan\api\controller\AuthController.class

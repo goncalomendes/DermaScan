@@ -1,0 +1,13 @@
+C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\payload\JwtResponse.java
+C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\repository\ScanRepository.java
+C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\security\AuthTokenFilter.java
+C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\repository\UserRepository.java
+C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\security\JwtUtils.java
+C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\security\UserDetailsImpl.java
+C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\DermaScanApplication.java
+C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\model\Scan.java
+C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\controller\AuthController.java
+C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\model\User.java
+C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\config\SecurityConfig.java
+C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\controller\ScanController.java
+C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\security\UserDetailsServiceImpl.java

@@ -1,0 +1,17 @@
+# DermaScan App Development
+
+- [ ] Project Planning & Setup
+    - [/] Define Tech Stack & Requirements
+    - [ ] Initialize React Native (Expo) Project
+    - [ ] Configure Navigation & Base Layout
+- [ ] Core Features
+    - [ ] Camera Integration (Take/Select Photos)
+    - [ ] Body Location Selector (UI for marking spot)
+    - [ ] AI Identification Service (Mock or Real API)
+    - [ ] Database & Storage Setup (Save scans)
+- [ ] UI/UX Refinement
+    - [ ] Dashboard/History View
+    - [ ] Scan Details View
+- [ ] Verification
+    - [ ] Test Camera Flow
+    - [ ] Test Data Persistence

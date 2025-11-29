@@ -1,0 +1,40 @@
+# Implementation Plan - DermaScan
+
+## User Review Required
+> [!IMPORTANT]
+> **Tech Stack Updates**:
+> 1.  **Frontend**: **React Native with Expo**.
+>     *   *What is Expo?* Expo is a framework around React Native that simplifies the development process. It handles the "native" parts (building the app binary) so you can write just JavaScript/TypeScript. It **does** support accessing the Camera, Photo Library, and complex rendering (OpenGL/Skia) directly.
+> 2.  **Backend**: **Java (Spring Boot) + PostgreSQL**.
+>     *   *Supabase vs Firebase vs Java*:
+>         *   **Supabase**: Open-source Firebase alternative based on SQL (PostgreSQL). Good for rapid CRUD.
+>         *   **Firebase**: NoSQL (Document store). Good for real-time chat/updates, but harder for complex relational data.
+>         *   **Java (Spring Boot)**: Industry standard. Gives you full control, strong typing, and excellent performance. Since you prefer Java, we will build a **Spring Boot REST API** connected to a **PostgreSQL** database.
+> 3.  **AI Strategy**:
+>     *   Found several open-source models on Hugging Face (e.g., `google/derm-foundation`, `Anwarkh1/Skin_Cancer-Image_Classification`).
+>     *   **Proposal**: For the MVP, we can wrap one of these Python-based models in a simple API (or use a hosted inference API) and call it from your Java Backend.
+
+## Proposed Changes
+
+### 1. Frontend (Mobile App)
+*   **Framework**: React Native (Expo SDK 50+).
+*   **Language**: TypeScript.
+*   **UI Library**: Gluestack-UI or Tamagui (for consistent, premium design).
+*   **Navigation**: Expo Router (file-based routing).
+
+### 2. Backend (API)
+*   **Framework**: Java Spring Boot (Web, JPA, Security).
+*   **Database**: PostgreSQL (Dockerized for local dev).
+*   **Storage**: Local filesystem (dev) or S3-compatible (prod) for storing images.
+
+### 3. AI / ML Service
+*   **Model**: Start with `Anwarkh1/Skin_Cancer-Image_Classification` (ViT based) or `google/derm-foundation`.
+*   **Integration**:
+    *   *Option A*: Python Microservice (FastAPI) hosting the model.
+    *   *Option B*: Java Deep Learning Library (DJL) to run the model directly in Java (more complex setup).
+    *   *Recommendation*: Option A for speed.
+
+## Verification Plan
+*   **Backend**: Unit tests for Java Controllers/Services.
+*   **Frontend**: Manual testing on Expo Go (Android/iOS).
+*   **Integration**: Verify App -> Java API -> Database flow.

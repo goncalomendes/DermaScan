@@ -1,0 +1,32 @@
+# Implementation Plan - DermaScan
+
+## User Review Required
+> [!IMPORTANT]
+> **Tech Stack Decision**: Proposing **React Native with Expo** for cross-platform (iOS/Android) development. It allows rapid iteration and easy access to native features like Camera.
+>
+> **Backend**: Proposing **Supabase** (PostgreSQL + Auth + Storage) or **Firebase**. Which do you prefer? (Defaulting to Supabase for SQL structure).
+>
+> **AI Analysis**: How should the identification work?
+> 1. Integration with a cloud API (e.g., OpenAI Vision, Gemini Vision)?
+> 2. On-device model (more complex, offline capable)?
+> *Recommendation*: Start with Cloud API for MVP.
+
+## Proposed Changes
+
+### Project Structure
+- Initialize `derma_scan` using `create-expo-app`.
+- Setup `react-navigation` for screen management.
+- Use `gluestack-ui` or `tamagui` for styling (or standard StyleSheet/Tailwind).
+
+### Data Model
+- **Users**: Auth profile.
+- **Scans**:
+    - `id`: UUID
+    - `image_url`: String
+    - `body_location`: String/Coordinates
+    - `analysis_result`: JSON (AI prediction)
+    - `created_at`: Timestamp
+
+## Verification Plan
+- Manual testing of camera permissions and capture on simulator/device.
+- Verify data insertion into Supabase/Local Mock DB.

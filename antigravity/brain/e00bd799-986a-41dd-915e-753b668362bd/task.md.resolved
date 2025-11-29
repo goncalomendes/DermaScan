@@ -1,0 +1,23 @@
+# DermaScan App Development
+
+- [ ] Project Planning & System Design
+    - [x] Define Tech Stack & Requirements
+        - [x] Explain Expo & React Native Capabilities
+        - [x] Compare Backend Options (Supabase vs Firebase vs Java)
+        - [x] Research Open Source AI Models (Cancer focused)
+        - [x] Research Broad Skin Disease Models (Psoriasis, Rashes, etc.)
+    - [/] Initialize React Native (Expo) Project
+    - [ ] Initialize Java Spring Boot Project
+    - [ ] Initialize Python AI Microservice
+    - [ ] Design Database Schema (PostgreSQL)
+- [ ] Core Features
+    - [ ] Camera Integration (Take/Select Photos)
+    - [ ] Body Location Selector (UI for marking spot)
+    - [ ] AI Identification Service (Python FastAPI)
+    - [ ] Backend API Implementation (Users, Scans, Uploads)
+- [ ] UI/UX Refinement
+    - [ ] Dashboard/History View
+    - [ ] Scan Details View
+- [ ] Verification
+    - [ ] Test Camera Flow
+    - [ ] Test Data Persistence

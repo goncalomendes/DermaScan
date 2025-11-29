@@ -1,0 +1,26 @@
+# Project Initialization Walkthrough
+
+## Mobile App
+- **Status**: Initialized with Expo (React Native).
+- **Structure**:
+    - `src/screens`: HomeScreen, CameraScreen, ResultsScreen.
+    - `App.js`: Navigation setup.
+- **Verification**:
+    - Dependencies installed (`@react-navigation`, `expo-camera`, etc.).
+    - Project structure verified.
+
+## AI Service
+- **Status**: Environment setup complete.
+- **Dependencies**: Installed `fastapi`, `torch`, `transformers`, etc.
+- **Verification**:
+    - `verify_ai.py` script ran successfully, confirming imports.
+
+## Backend
+- **Status**: Development in Progress.
+- **Features**:
+    - **Entities**: User (1:N Scans), Scan.
+    - **Auth**: Register endpoint implemented (BCrypt enabled).
+    - **Upload**: Basic file upload endpoint created (local storage).
+- **Verification**:
+    - `mvn clean install` passed.
+    - Database connection configured (PostgreSQL).

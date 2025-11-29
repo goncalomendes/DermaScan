@@ -1,0 +1,36 @@
+# Implementation Plan - DermaScan Initialization
+
+## Goal Description
+Initialize the DermaScan project by verifying the existing backend and AI service skeletons and setting up the mobile application structure.
+
+## Proposed Changes
+
+### Backend (Spring Boot)
+- **Issue**: `mvn` command not found and `mvnw` wrapper missing.
+- **Action**: User needs to install Maven or provide path. Will attempt to proceed with other tasks while waiting, or use `javac` manually if absolutely necessary (not recommended).
+- Verify [pom.xml](file:///c:/Users/tiago/.gemini/antigravity/scratch/DermaScan/backend-api/pom.xml) dependencies (Done).
+- Ensure [DermaScanApplication.java](file:///c:/Users/tiago/.gemini/antigravity/scratch/DermaScan/backend-api/src/main/java/com/dermascan/api/DermaScanApplication.java) is correctly configured (Done).
+- Check `application.properties` for database configuration.
+
+### AI Service (Python)
+- Verify [requirements.txt](file:///c:/Users/tiago/.gemini/antigravity/scratch/DermaScan/ai-service/requirements.txt) (Done).
+- Ensure [main.py](file:///c:/Users/tiago/.gemini/antigravity/scratch/DermaScan/ai-service/main.py) has a basic API endpoint (Done).
+- **Action**: Create a virtual environment and install dependencies.
+
+### Mobile App
+- **Tooling**: Use `npm.cmd` (PowerShell script execution policy blocks `npm`).
+- **Framework**: React Native with Expo (Managed Workflow) for rapid cross-platform development.
+- **Action**: Initialize project `mobile-app` in root.
+    - Command: `npx -y create-expo-app@latest mobile-app`
+
+## Verification Plan
+
+### Automated Tests
+- **Backend**: Cannot run `mvn test` yet.
+- **AI Service**: Run `python -m pytest` after installing dependencies.
+- **Mobile App**: Run `npm.cmd start` (or `npx expo start`) in `mobile-app` directory.
+
+### Manual Verification
+- **Backend**: Check if [java](file:///c:/Users/tiago/.gemini/antigravity/scratch/DermaScan/backend-api/src/main/java/com/dermascan/api/DermaScanApplication.java) can run the compiled jar (if we can build it).
+- **AI Service**: Start FastAPI server `uvicorn main:app --reload` and check `localhost:8000`.
+- **Mobile App**: Launch Expo Go or web simulator.
