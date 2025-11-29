@@ -11,3 +11,4 @@ com\dermascan\api\config\SecurityConfig.class
 com\dermascan\api\security\AuthTokenFilter.class
 com\dermascan\api\security\UserDetailsImpl.class
 com\dermascan\api\controller\AuthController.class
+com\dermascan\api\payload\ScanResponse.class

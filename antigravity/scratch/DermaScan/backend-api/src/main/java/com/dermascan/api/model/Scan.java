@@ -22,6 +22,8 @@ public class Scan {
     @Column(columnDefinition = "TEXT")
     private String analysisResult;
 
+    private String bodyLocation;
+
     private LocalDateTime timestamp;
 
     @PrePersist

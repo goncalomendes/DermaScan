@@ -10,4 +10,5 @@ C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\c
 C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\model\User.java
 C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\config\SecurityConfig.java
 C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\controller\ScanController.java
+C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\payload\ScanResponse.java
 C:\Users\tiago\.gemini\antigravity\scratch\DermaScan\backend-api\src\main\java\com\dermascan\api\security\UserDetailsServiceImpl.java

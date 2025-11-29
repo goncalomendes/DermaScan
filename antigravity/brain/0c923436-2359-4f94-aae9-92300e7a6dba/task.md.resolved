@@ -17,11 +17,12 @@ Project initialized with backend authentication, mobile app skeleton, and AI ser
     - [/] Copy planning artifacts to repository
     - [ ] Create comprehensive README
     - [ ] Document API endpoints
-- [ ] Backend Development (Continued)
-    - [ ] Complete Scan Controller implementation
-    - [ ] Database configuration (PostgreSQL)
-    - [ ] Image upload and storage
-    - [ ] Database migrations
+- [x] Backend Development (Continued)
+    - [x] Complete Scan Controller implementation
+    - [x] Database configuration (H2 for development)
+    - [x] Image upload and storage
+    - [x] Add endpoints to retrieve user scans
+    - [/] Test backend flow end-to-end
 - [ ] AI Service Development
     - [ ] Image preprocessing pipeline
     - [ ] Model integration (skin condition classifier)
