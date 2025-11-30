@@ -96,7 +96,7 @@ public class ScanControllerTest {
                 mockMvc.perform(multipart("/api/scans/upload")
                                 .file(file)
                                 .param("bodyLocation", "left-arm"))
-                                .andExpect(status().isUnauthorized());
+                                .andExpect(status().isForbidden());
         }
 
         @Test
@@ -141,7 +141,7 @@ public class ScanControllerTest {
         @Test
         public void testGetUserScans_WithoutAuthentication() throws Exception {
                 mockMvc.perform(get("/api/scans"))
-                                .andExpect(status().isUnauthorized());
+                                .andExpect(status().isForbidden());
         }
 
         @Test

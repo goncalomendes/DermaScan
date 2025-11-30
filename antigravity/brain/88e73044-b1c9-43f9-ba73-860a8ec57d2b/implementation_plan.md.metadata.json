@@ -1,0 +1,5 @@
+{
+  "artifactType": "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
+  "summary": "Fix compilation error in User.java by adding missing import.",
+  "updatedAt": "2025-11-30T02:12:24.408811800Z"
+}
